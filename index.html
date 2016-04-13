@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>首页</title>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"> -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/variable.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="container">
+    <header id="hd">
+        <p>webapp经常会用到的一些点击特效</p>
+    </header>
+    <section>
+        <h3>商品数量加减</h3>
+        <div class="content">
+            <button type="" class="btn-sum subtract" disabled="true">-</button>
+            <input type="text" name="" value="1" placeholder="" class="in-sum">
+            <button type="" class="btn-sum add">+</button><span class="r clear-btn del-cfm"></span>
+        </div>
+        <h3>商品规格选择</h3>
+        <div class="">
+            <ul class="fix good-select">
+                <li><button type="" class="btn btn-default">S</button><i></i></li>
+                <li><button type="" class="btn btn-default">M</button><i></i></li>
+                <li><button type="" class="btn btn-default">L</button><i></i></li>
+                <li><button type="" class="btn btn-default">XL</button><i></i></li>
+            </ul>
+        </div>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script src="js/base.js"></script>
+    <script type="text/javascript">
+        select($(".good-select li"), 'active');
+    </script>
+</body>
+
+</html>

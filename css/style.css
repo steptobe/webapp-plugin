@@ -1,0 +1,70 @@
+/*商品数量加减*/
+
+header {
+    text-align: center;
+    font-size: 16px;
+}
+section h3{
+	font-size: 16px;
+	font-weight: normal;
+	margin:20px 0 10px;  
+}
+.btn-sum {
+    background: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 2px;
+    height: 20px;
+    width: 24px;
+}
+
+.subtract {
+    margin-right: -1px;
+}
+
+.in-sum {
+    text-align: center;
+    width: 30px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    height: 20px;
+    border-right-color: transparent;
+    margin: 0 -4px;
+}
+
+.good-select li {
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+button[disabled] {
+    opacity: .65;
+    cursor: not-allowed;
+    background: #eee;
+}
+.btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    outline: 0;
+    padding: 5px 0;
+    text-align: center;
+    width: 45px;
+}
+
+li.active .btn {
+    border: 1px solid #e0007d;
+}
+
+li.active i {
+    position: absolute;
+    background: url(../images/ico-selected.png) no-repeat;
+    background-size: 12px 12px;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -99em;
+    display: block;
+
+}
