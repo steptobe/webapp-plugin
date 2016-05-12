@@ -2,8 +2,8 @@ $(window).load(function() {
 
 });
 $(document).ready(function($) {
-    //商品加减
-    $('.subtract').click(function() {
+   //商品加减
+        $('.subtract').click(function() {
         if (parseInt($(this).siblings('.in-sum').val()) !== 1){      
             var sum = parseInt($(this).siblings('.in-sum').val()) - 1;
             $(this).siblings('.in-sum').val(sum);
@@ -14,7 +14,7 @@ $(document).ready(function($) {
     });
     $('.add').click(function() {
         var sum = parseInt($(this).siblings('.in-sum').val()) + 1;
-        $('.subtract').attr("disabled",false);
+        $(this).siblings('.subtract').attr("disabled",false);
         $(this).siblings('.in-sum').val(sum);
     });
 
