@@ -114,5 +114,20 @@ $(document).ready(function($) {
                     };
                 });
             }
-
+            //导航固定在顶部
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>160){
+                    $(".hh-f").addClass('navfix').css('position','fixed').css('top','0');
+                }
+                else
+                {
+                    $(".hh-f").css('position','relative').css('top','').removeClass('navfix');
+                }
             });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#to_top").click(function(){
+                $('body,html').animate({scrollTop:0},100);
+                return false;
+            });
+
+});

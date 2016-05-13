@@ -1,5 +1,8 @@
 /*商品数量加减*/
-
+body{
+    width: 1240px;
+    margin: 20px auto;
+}
 header {
     text-align: center;
     font-size: 16px;
@@ -87,4 +90,52 @@ button[disabled] {
 .btn_lh:hover{ color:#fff; text-decoration:none;}
 
 .btm p{ font:normal 12px/24px 'Microsoft YaHei'; text-align:center;}
-
+/* ==========================================================================
+   导航滚动
+   ========================================================================== */
+.navS1 #nav {left: 20px;list-style: none;margin: 0;position: fixed;top: 20px;}
+.navS1 #nav li {margin-bottom: 2px;}
+.navS1 #nav a {background: #ededed;color: #666;display: block; font-size: 14px;padding: 5px 10px;text-decoration: none;text-transform: uppercase;}
+.navS1 #nav a:hover {background: #dedede;}
+.navS1 #nav .current a {background: #666;color: #ededed;}
+.navS1 #container {margin: 0 auto; width: 800px;}
+.navS1 .section {border-bottom: 5px solid #ccc;min-height: 60vh;padding: 50px 20px;}
+.navS1 .section p:last-child { margin-bottom: 0;}
+.navS2 .section-wrapper {margin-top: -50px;padding-top: 50px;}
+.navS2 .section-wrapper:first-child .section {padding-top: 100px;}
+.navS2 #nav {background: #000;left: 0;list-style: none;overflow: hidden;padding-top: 9px;position: fixed;right: 0;text-align: center;top: 0;}
+.navS2 #nav li {display: inline-block; margin-bottom: 0;}
+.navS2 #nav a {background: #000;color: #fff;display: block;padding: 10px;}
+.navS2 #nav a:hover {background: none; color: #dedede;}
+.navS2 #nav .current a {background: #fff;color: #000;}
+h1, h2, h3, p, pre, ul {
+    margin: 0;
+    padding: 0;
+}
+.navS h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.navS h2 {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.navS h3 {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+.navS p, .navS pre, .navS ul {
+    margin-bottom: 2em;
+}
+.navS pre {
+    background: #fefefe;
+    border: 1px solid #dedede;
+    overflow-x: auto;
+    padding: 2em;
+}
+.navS ul {
+    margin-left: 1em;
+}
